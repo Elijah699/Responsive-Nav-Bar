@@ -27,23 +27,131 @@
 
       <title>Responsive Nav Bar</title>
     </head>
-    <body>
+
+    <body id="body">
       <!-- Nav Bar Section -->
       <nav class="navbar">
-        <input type="checkbox" id="mobile-menu" />
+        <input type="checkbox" onchange="fixedModal()" id="mobile-menu" />
         <label for="mobile-menu">
-          <i class="fas fa-bars fa-2x" id="bars"></i>
-          <i class="fas fa-times fa-2x" id="times"></i>
+          <i class="fas fa-bars fa-1x" id="bars"></i>
+          <i class="fas fa-times fa-1x" id="times"></i>
         </label>
         <h1>Creed Bar</h1>
         <ul>
           <li><a class="active" href="#Home">Home</a></li>
-          <li><a href="#Dashboard">Dashboard</a></li>
-          <li><a href="#Profile">Profile</a></li>
-          <li><a href="#Re-invest">Re-invest</a></li>
-          <li><a href="#Deposit">Deposit</a></li>
+          <li><a href="#Dashboard" onclick="closeModal()">Dashboard</a></li>
+          <li><a href="#Profile" onclick="closeModal()">Profile</a></li>
+          <li><a href="#Re-invest" onclick="closeModal()">Re-invest</a></li>
+          <li><a href="#Deposit" onclick="closeModal()">Deposit</a></li>
         </ul>
       </nav>
+
+      <!-- <div>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+        quod mazim placerat facer possim assum. Typi non habent claritatem
+        insitam; est usus legentis in iis qui facit eorum claritatem.
+      </div>
+
+      <div id="Dashboard">
+        <p>DASHBORD</p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+        quod mazim placerat facer possim assum. Typi non habent claritatem
+        insitam; est usus legentis in iis qui facit eorum claritatem.
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+        quod mazim placerat facer possim assum. Typi non habent claritatem
+        insitam; est usus legentis in iis qui facit eorum claritatem.
+      </div>
+
+      <div id="Profile">
+        <p>PROFILE</p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+        quod mazim placerat facer possim assum. Typi non habent claritatem
+        insitam; est usus legentis in iis qui facit eorum claritatem.
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+        quod mazim placerat facer possim assum. Typi non habent claritatem
+        insitam; est usus legentis in iis qui facit eorum claritatem.
+      </div>
+
+      <div id="Re-invest">
+        <p>Re-invest</p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+        quod mazim placerat facer possim assum. Typi non habent claritatem
+        insitam; est usus legentis in iis qui facit eorum claritatem.
+      </div> -->
+
+      <script>
+        const getCheckbox = document.getElementById('mobile-menu');
+        const getBodyTag = document.getElementById('body');
+
+        // When modal is opened content beneath cannot be scrolled
+        function fixedModal() {
+          if (getCheckbox.checked === true) {
+            getBodyTag.style.overflow = "hidden";
+          } else {
+            getBodyTag.style.overflow = "visible";
+          }
+        }
+
+        // Close Modal when a nav-link is clicked
+        function closeModal() {
+          getCheckbox.checked = false;
+          getBodyTag.style.overflow = 'visible';
+        }
+      </script>
     </body>
   </html>
 </html>
